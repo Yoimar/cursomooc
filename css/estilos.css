@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat+Brush');
+/*Estilos Color*/
+.color-primary-0 { color: #364846 }	
+.color-primary-1 { color: #C2C5C5 }
+.color-primary-2 { color: #617271 }
+.color-primary-3 { color: #15312F }
+.color-primary-4 { color: #001917 }
+/* Main Primary color */
+
+h1 {
+	font-family: 'Caveat Brush', cursive;
+}
+
+*{
+  color: #364846;
+  box-sizing: border-box;
+}
+body {
+	font-family: cursive;
+	text-align: center;
+}
+ul {
+	list-style-position: inside;
+	margin: auto;
+	padding: 0;
+}
+li {
+	margin: 0;
+	padding: 0;
+	color: white;
+	list-style-position: inside;
+	list-style:none;
+}
+nav > ul > li {
+	display: flex;
+	align-items: stretch;
+	flex-flow: wrap;
+	text-align: center;
+	justify-content: space-around;
+	background: #364846;
+}
+a {
+	color: white;
+	text-decoration:none;
+	display: block;
+}
+a:hover {
+	background: #001917;
+	text-decoration:none;
+}
+.titulo-central {
+  background: -webkit-linear-gradient(#364846, white);
+  background: -moz-linear-gradient(#364846, white);
+  background: -o-linear-gradient(#364846, white);
+  background: linear-gradient(#364846, white);
+  margin-bottom: 2em;
+  padding-top: 4em;
+  margin-top: 0;
+  width: 70%;
+  margin: auto;
+  color: black;
+}
+h2, h3 {
+	background:#C2C5C5;
+	color: black;
+}
+.columna p, .columnaizquierda p, .columnaderecha p, .columnacentral p {
+	text-align: justify;
+}
+/* Cuadro de Codigo HTML  */
+pre {
+  background-color:#F1F1F1;
+  border:1px solid #00000;
+  margin:auto;
+  color:#0150c7;
+  text-align: left;
+  width: 70%;
+  word-wrap: break-word;
+}
+img {
+	border: 10px solid #15312F;
+	border-radius: 1%;
+}
+/* Caja central para empezar a implementar maquetacion */
+#cajacentral {
+	width: 70%;
+	margin: auto;
+	padding: 0;
+}
+.columnaizquierda {
+	width: 49%;
+	margin: auto;
+	float: left;
+}
+.columnaderecha {
+	width: 49%;
+	float: right;
+	margin: auto;
+}
+#cajacentral::after {
+    clear: both;
+}
+.columna::after {
+    clear: both;
+}
+.columnacentral img {
+	float: right;
+}
+.columnaderecha pre {
+	width: 100%
+}
+.columnacentral ol li {
+	margin: 0;
+	padding: 0;
+	color: white;
+	list-style-position: inside;
+	text-align: justify; 
+	color: #364846;
+}
+.columnacentral ul li{
+	list-style-type: none;
+	list-style: none;
+}
+.columna img {
+	float: right;
+	margin: 0;
+}
+.columna {
+	width: 70%;
+	height: 10%;
+	margin: auto;
+	padding: 0;
+	text-align: justify;
+}
+.calc {
+	width: 40%;
+	margin: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0;
+	text-align: center;
+}
+.calc button {
+	width: 3em;
+	height: 3em;
+	border-radius: 10%;
+}
+  .navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+.carousel-caption {
+  z-index: 10;
+}
+.carousel {
+ width: 100%;
+ margin: 0 auto;
+
+}
+.carousel-inner {
+  margin-top: 31px;
+  margin: 0 auto;
+}
+.carousel-inner > img {
+margin-top: 20px;
+display: block; 
+width: 100%;
+height: auto;
+margin: 0 auto;
+}
+.carousel-inner > a {
+display: block; 
+width: 100%;
+height: auto;
+margin: 0 auto;
+
+}
+#calculadora {
+    border: 3px solid lightgrey;
+    border-radius: 10px;
+    border-style: outset;
+    margin: 0 auto;
+    background-color: #617271;
+    width: 330px;
+}
+
+.lcd {
+    margin-top: 10px;
+    background-color: #001917;
+    border: 1px solid white;
+    border-style: inset;
+    background: #C2C5C5;
+    background: -moz-linear-gradient(-45deg, #15312F 0%, #364846 100%);
+    background: -webkit-linear-gradient(-45deg, #15312F 0%, #364846 100%);
+    background: linear-gradient(135deg, #15312F 0%, #364846 100%);
+    background-color: #364846;
+    border: 1px solid white;
+    border-radius: 7px;
+    border-style: inset !important;
+    color: white;
+}
+
+#pantalla {
+    height: 70px;
+    margin: 10px 16px 0;
+    /*border: 1px solid blue;*/
+}
+
+#pantalla #txtNum {
+    width: 100%;
+    height: 60px;
+    font-size: 24px;
+    padding: 5px 5px 5px 30px;
+}
+
+.p-handle {
+    border-right: 1px solid white;
+    border-radius: 7px 0 0 7px;
+    position: absolute;
+    background-color: #001917;
+    cursor: move;
+}
+
+#pant-handle {
+    width: 25px;
+    height: 58px;
+    margin: 11px 1px 1px 1px;
+}
+
+#mem-handle {
+    width: 25px;
+    height: 34px;
+    margin: 1px;
+}
+
+#memory {
+    height: 36px;
+    font-size: 16px;
+    padding: 8px 5px 0px 30px;
+    margin-top: 0px;
+    color: white;
+}
+
+#mem-margen {
+    height: 10px;
+}
+
+#calculadora > .row {
+    margin: 10px 0 20px;
+}
+
+#teclado .row .row {
+    margin: 0 0px;
+}
+
+.container .panel-footer {
+    margin-top: 20px;
+    height: 3em;
+}
+@media (max-width: 767px) {
+    #calculadora {
+        width: 330px;
+    }
+    .bd2 {
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #calculadora {
+        width: 360px;
+    }
+    .bd2 {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #calculadora {
+        width: 400px;
+        margin: 0 auto;
+    }
+    #teclado .row .row {
+        margin: 0 0px;
+    }
+    .bd2 {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    #calculadora {
+        width: 430px;
+    }
+    .bd2 {
+        margin-top: 0;
+    }
+}
+
+
+@media (orientation:landscape) {
+    #xcalc_main {
+        width: 100vh;
+    }
+}
+
+@media (orientation:portrait) {
+    #xcalc_main {
+        width: 100%;
+    }
+}
+
+#det_ejercicio h3 {
+    background-color: lightblue;
+    border-top: 1px solid black;
+    padding-bottom: 0.5ex;
+}
+
+#det_ejercicio h2 {
+    color: deepskyblue;
+}
+
+#det_ejercicio ul {
+    list-style-type: none;
+}
+
+.ui-state-hover2, .ui-state-highlight2 {
+    border: 1px solid white;
+    background: #C2C5C5;
+    color: white;
+}
+.row button {
+	border: 1px solid #364846;
+    border-radius: 7px; 
+}

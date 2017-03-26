@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="utf-8">
+
+    <title>P2P-Herencia CSS</title>
+    <link href="../css/estilos.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../css/estilos.css" rel="stylesheet" type="text/css" media="all">
+    
+    <style>
+
+        header { color: white }       
+        /* 
+            Estilo Linea = 0, Numero ID = 0, Numero Clases = 1, Numero Marcas = 1  Total = 0, 0, 0, 1
+        */
+        header.cabecera { color: red }  
+        /* 
+            Estilo Linea = 0, Numero ID = 0, Numero Clases = 1, Numero Marcas = 2  Total = 0, 0, 1, 2
+        */
+        h1 { color: pink }             
+        /* 
+            Estilo Linea = 0, Numero ID = 1, Numero Clases = 1, Numero Marcas = 1  Total = 0, 0, 0, 1
+        */         
+        h1 { color: green }                 
+        /* 
+            Estilo Linea = 0, Numero ID = 0, Numero Clases = 0, Numero Marcas = 1  Total = 0, 0, 0, 1
+        */
+        #caja header.cabecera  h1 { color: blue }        
+        /* 
+            Estilo Linea = 0, Numero ID = 1, Numero Clases = 1, Numero Marcas = 2  Total = 0, 1, 1, 2
+        */     
+        body{
+            text-align: center
+        }
+    </style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../css/bootstrap.css" rel="stylesheet">
+  <link href="../css/estilos.css" rel="stylesheet" type="text/css" media="all">
+  <script src="../js/jquery-3.1.1.js"></script>
+  <script src="../js/bootstrap.js"></script>
+
+</head>
+
+<body>
+<div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">Mooc</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              
+              <ul class="nav navbar-nav">
+                
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modulo 01<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">P2P - Opcional</li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="../mod01/miprimerapaginaconimagen.html">Mi primera Pagina con Imagenes    </a></li>
+                    <li><a href="../mod01/arbol.html">Diagrama de Arbol                 </a></li>
+                    <li><a href="../mod01/herenciacss.html">Herencia CSS                      </a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">P2P - Obligatorio</li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="../mod01/estructurahtml5.html">Estructura HTML 5                      </a></li>
+                </ul>
+                </li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modulo 02<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">P2P - Opcional</li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="../mod02/cssherencia.html">Herencia CSS   </a></li>
+                    <li><a href="../mod02/cursomooc.html">Curso MOOC                  </a></li>
+                    <li><a href="../mod02/fuente.html"> Fuente Roboto                     </a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">P2P - Obligatorio</li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="../mod02/paginapersonal.html">Pagina Personal                     </a></li>
+                </ul>
+                </li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modulo 03<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">P2P - Obligatorio</li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="../mod03/datejavascript.html">Date, DOM Javascript                     </a></li>
+                </ul>
+                </li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modulo 04<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">P2P - Obligatorio</li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="../mod04/calculadora.html">Calculadora Javascript                      </a></li>
+                </ul>
+                </li>                
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modulo 05<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">P2P - Obligatorio</li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="../mod05/calculadorajquery.html">Calculadora Jquery                     </a></li>
+                </ul>
+                </li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modulo 06<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">P2P - Opcional</li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="../mod06/menudesplegable.html">Menu Desplegable</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">P2P - Obligatorio</li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="../mod06/carrusel.html">Carrusel                     </a></li>
+                    <li><a href="../mod06/calculadorajqueryui.html">Calculadora Jquery Ui                     </a></li>
+                </ul>
+                </li>
+              
+              </ul>
+
+            </div>
+          </div>
+        </nav>
+
+      </div>
+</div>
+  <h1 class="titulo-central" style="color:black">Herencia CSS</h1>
+
+  <div id="caja">
+
+        <header class="cabecera">
+            <h1>Cabecera: header</h1>
+        </header>
+
+    </div>
+<!--
+Los Estilos Fueron Aplicados dentro de la pagina con la etiqueta style y comentados dentro del css
+
+Este es el resumen
+
+1.- header { color: white }       
+    Estilo Linea = 0, Numero ID = 0, Numero Clases = 1, Numero Marcas = 1  Total = 0, 0, 0, 1
+2.- header.cabecera { color: red }  
+    Estilo Linea = 0, Numero ID = 0, Numero Clases = 1, Numero Marcas = 2  Total = 0, 0, 1, 2
+3.- h1 { color: pink }             
+    Estilo Linea = 0, Numero ID = 1, Numero Clases = 1, Numero Marcas = 1  Total = 0, 0, 0, 1
+4.- h1 { color: green }                 
+    Estilo Linea = 0, Numero ID = 0, Numero Clases = 0, Numero Marcas = 1  Total = 0, 0, 0, 1
+5.- #caja header.cabecera h1 { color: blue }        
+    Estilo Linea = 0, Numero ID = 1, Numero Clases = 1, Numero Marcas = 2  Total = 0, 1, 1, 2
+
+¡Ganador color:blue, Puntuacion 0, 1, 1, 2. !
+-->
+
+<footer>@Yoimar Urbina 2017</footer>
+
+</body>
+
+</html>

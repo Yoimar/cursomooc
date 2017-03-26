@@ -1,0 +1,164 @@
+#calculadora {
+    border: 3px solid lightgrey;
+    border-radius: 10px;
+    border-style: outset;
+    margin: 0 auto;
+    background-color: azure;
+}
+
+.lcd {
+    margin-top: 10px;
+    background-color: beige;
+    border: 1px solid gray;
+    border-style: inset;
+    background: #feffe8;
+    background: -moz-linear-gradient(-45deg, #feffe8 0%, #d6dbbf 100%);
+    background: -webkit-linear-gradient(-45deg, #feffe8 0%, #d6dbbf 100%);
+    background: linear-gradient(135deg, #feffe8 0%, #d6dbbf 100%);
+    background-color: beige;
+    border: 1px solid lightgray;
+    border-radius: 7px;
+    border-style: inset !important;
+}
+
+#pantalla {
+    height: 70px;
+    margin: 10px 16px 0;
+    /*border: 1px solid blue;*/
+}
+
+#pantalla #txtNum {
+    width: 100%;
+    height: 60px;
+    font-size: 24px;
+    padding: 5px 5px 5px 30px;
+}
+
+.p-handle {
+    border-right: 1px solid burlywood;
+    border-radius: 7px 0 0 7px;
+    position: absolute;
+    background-color: bisque;
+    cursor: move;
+}
+
+#pant-handle {
+    width: 25px;
+    height: 58px;
+    margin: 11px 1px 1px 1px;
+}
+
+#mem-handle {
+    width: 25px;
+    height: 34px;
+    margin: 1px;
+}
+
+#memory {
+    height: 36px;
+    font-size: 16px;
+    padding: 8px 5px 0px 30px;
+    margin-top: 0px;
+    /*margin-bottom: 10px;*/
+    color: darkgray;
+}
+
+#mem-margen {
+    height: 10px;
+}
+
+#calculadora > .row {
+    margin: 10px 0 20px;
+}
+
+#teclado .row .row {
+    margin: 0 0px;
+}
+
+.container .panel-footer {
+    margin-top: 20px;
+    height: 3em;
+}
+
+@media (max-width: 767px) {
+    #calculadora {
+        width: 330px;
+    }
+    .bd2 {
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #calculadora {
+        width: 700px;
+        /*margin: 0 auto;*/
+    }
+    .bd2 {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #calculadora {
+        width: 700px;
+        margin: 0 auto;
+    }
+    #teclado .row .row {
+        margin: 0 0px;
+    }
+    .bd2 {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    #calculadora {
+        width: 800px;
+    }
+    .bd2 {
+        margin-top: 0;
+    }
+}
+
+@media (orientation:landscape) {
+    #xcalc_main {
+        width: 100vh;
+    }
+}
+
+@media (orientation:portrait) {
+    #xcalc_main {
+        width: 100%;
+    }
+}
+
+
+/* ESTILOS PARA LA EXPLICACIÓN DEL EJERCICIO */
+
+#det_ejercicio h3 {
+    background-color: lightblue;
+    border-top: 1px solid black;
+    padding-bottom: 0.5ex;
+}
+
+#det_ejercicio h2 {
+    color: deepskyblue;
+}
+
+#det_ejercicio ul {
+    list-style-type: none;
+}
+
+.ui-state-hover2, .ui-state-highlight2 {
+    border: 1px solid green;
+    background: greenyellow;
+    /*color: greenyellow;*/
+    /*background: -moz-linear-gradient(-45deg, #feffe8 0%, #d6dbbf 100%);
+    background: -webkit-linear-gradient(-45deg, #feffe8 0%, #d6dbbf 100%);
+    background: linear-gradient(135deg, #feffe8 0%, #d6dbbf 100%);*/
+}
+
+/*.ui-draggable-handle {
+    z-index: 1;
+}*/

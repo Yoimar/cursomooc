@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculadora de Yoimar Urbina</title>
+
+<meta charset="utf-8">
+
+<script type="text/javascript">
+  var num, acc = 0, op = "";
+function inic ()   {num = document.getElementById("num");}
+
+function num1(){num.value = num.value + 1;}
+function num2(){num.value = num.value + 2;}
+function num3(){num.value = num.value + 3;}
+function num4(){num.value = num.value + 4;}
+function num5(){num.value = num.value + 5;}
+function num6(){num.value = num.value + 6;}
+function num7(){num.value = num.value + 7;}
+function num8(){num.value = num.value + 8;}
+function num9(){num.value = num.value + 9;}
+function num0(){num.value = num.value + 0;}
+
+function cuadratica() {
+  num.value = num.value * num.value;
+}
+
+function inverso() {
+  num.value = 1/num.value;
+}
+
+function raiz() {
+  num.value = Math.sqrt(num.value);
+}
+
+function entera() {
+	var val = +num.value;
+  num.value = val >= 0 ? Math.floor(val) : -Math.ceil(val);
+}
+
+  function mas()   { acc = num.value;  num.value=""; op = "+"; }
+  function menos() { acc = num.value;  num.value=""; op = "-"; }
+  function por()   { acc = num.value;  num.value=""; op = "*"; }
+  function divide() { acc = num.value; num.value=""; op = "/"; }
+  function elevar() { acc = num.value; num.value=""; op = "^"; }
+
+  function calcular() {
+    if (op === "+") { num.value = ((+acc) + (+num.value)); }
+    if (op === "-") { num.value = ((+acc) - (+num.value)); }
+    if (op === "*") { num.value = ((+acc) * (+num.value)); }
+    if (op === "/") { num.value = ((+acc) / (+num.value)); }
+    if (op === "^") { num.value = Math.pow(+acc, +num.value); }
+  }
+
+
+  function vaciar0 () {num.value = "";acc = 0}  
+  function vaciar () {num.value = "";} 
+</script>
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../css/bootstrap.css" rel="stylesheet">
+  <link href="../css/estilos.css" rel="stylesheet" type="text/css" media="all">
+  <script src="../js/jquery-3.1.1.js"></script>
+  <script src="../js/bootstrap.js"></script>
+
+</head>
+
+<body>
+<div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">Mooc</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              
+              <ul class="nav navbar-nav">
+                
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modulo 01<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">P2P - Opcional</li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="../mod01/miprimerapaginaconimagen.html">Mi primera Pagina con Imagenes    </a></li>
+                    <li><a href="../mod01/arbol.html">Diagrama de Arbol                 </a></li>
+                    <li><a href="../mod01/herenciacss.html">Herencia CSS                      </a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">P2P - Obligatorio</li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="../mod01/estructurahtml5.html">Estructura HTML 5                      </a></li>
+                </ul>
+                </li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modulo 02<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">P2P - Opcional</li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="../mod02/cssherencia.html">Herencia CSS   </a></li>
+                    <li><a href="../mod02/cursomooc.html">Curso MOOC                  </a></li>
+                    <li><a href="../mod02/fuente.html"> Fuente Roboto                     </a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">P2P - Obligatorio</li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="../mod02/paginapersonal.html">Pagina Personal                     </a></li>
+                </ul>
+                </li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modulo 03<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">P2P - Obligatorio</li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="../mod03/datejavascript.html">Date, DOM Javascript                     </a></li>
+                </ul>
+                </li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modulo 04<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">P2P - Obligatorio</li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="../mod04/calculadora.html">Calculadora Javascript                      </a></li>
+                </ul>
+                </li>                
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modulo 05<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">P2P - Obligatorio</li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="../mod05/calculadorajquery.html">Calculadora Jquery                     </a></li>
+                </ul>
+                </li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Modulo 06<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">P2P - Opcional</li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="../mod06/menudesplegable.html">Menu Desplegable</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">P2P - Obligatorio</li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="../mod06/carrusel.html">Carrusel                     </a></li>
+                    <li><a href="../mod06/calculadorajqueryui.html">Calculadora Jquery Ui                     </a></li>
+                </ul>
+                </li>
+              
+              </ul>
+
+            </div>
+          </div>
+        </nav>
+
+      </div>
+</div>
+	<h1 class="titulo-central">Calculadora de Yoimar Urbina</h1>
+	<div class="calc">
+  <p>Número:</p>
+	<p><input type="text" style="width:12em;height:3em;text-align:center;" id="num" onClick="vaciar()"><br></p>
+    <p>
+      <button onclick="vaciar0()">AC</button>  
+      <button onClick="calcular()">=</button>  
+    </p>
+    <p>
+      <button onclick="num1()">1</button>
+      <button onclick="num2()">2</button>
+      <button onclick="num3()">3</button>
+    </p>
+    <p>
+      <button onclick="num4()">4</button>
+      <button onclick="num5()">5</button>
+      <button onclick="num6()">6</button>
+    </p>
+    <p>
+      <button onclick="num7()">7</button>
+      <button onclick="num8()">8</button>
+      <button onclick="num9()">9</button>
+    </p>
+    <p>
+      <button onclick="num0()">0</button>
+    </p>
+    <p>
+      <button onclick="mas()"     onclick="calcular()">+</button>
+      <button onclick="menos()"   onclick="calcular()">-</button>
+      <button onclick="por()"     onclick="calcular()">x</button>
+      <button onclick="divide()"  onclick="calcular()">/</button>
+    </p>    
+    <p>
+      <button onclick="entera()"> |x| </button>
+      <button onclick="raiz()">&#8730;x</button>
+      <button onclick="inverso()"> 1/x </button>
+    </p>
+    <p>
+      <button onclick="cuadratica()">x<sup>2</sup></button>
+      <button onclick="elevar()">x<sup>y</sup></button>
+    </p>    
+    </div>
+</body>
+</html>
